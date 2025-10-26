@@ -1,0 +1,198 @@
+$verde-principal: #16A34A; 
+$azul-secundario: #2563EB; 
+$fundo-claro: #F0FDF4; 
+$fundo-caixa: #F3F5F8; 
+$texto-escuro: #1F2937; 
+$texto-claro: #4B5563; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $fundo-claro;
+    color: $texto-escuro;
+}
+
+// Tipografia 
+h1, h2 {
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: $texto-escuro;
+}
+
+.banner h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    color: $texto-escuro;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: $texto-escuro;
+}
+
+h5 {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    color: $texto-escuro;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: $texto-claro;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: $texto-escuro;
+}
+
+
+button {
+    padding: 12px 25px;
+    border: 2px solid $verde-principal;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btnNav {
+    background-color: $verde-principal;
+    color: white;
+}
+
+.btnNav:hover {
+    background-color: #13883C;
+}
+
+.btn-doar {
+    background-color: $verde-principal;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-doar:hover {
+    background-color: #13883C;
+}
+
+.btn-adquirir {
+    background-color: transparent;
+    color: $verde-principal;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-adquirir:hover {
+    background-color: $verde-principal;
+    color: white;
+}
+
+.btn-primario { /* Botão Começar Agora */
+    background-color: $verde-principal;
+    color: white;
+}
+
+.btn-primario:hover {
+    background-color: #13883C;
+}
+
+.btn-secundario { /* Botão Saiba Mais */
+    background-color: transparent;
+    color: $verde-principal;
+}
+
+.btn-secundario:hover {
+    background-color: $verde-principal;
+    color: white;
+}
+
+.cards-produtos button {
+    background-color: $verde-principal;
+    color: white;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+}
+
+.cards-produtos button:hover {
+    background-color: #13883C;
+}
+
+// Layout Geral
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+// Header
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav a {
+    margin-left: 20px;
+}
+
+header nav .btnNav {
+    margin-left: 30px;
+}
+
+// Banner
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding-top: 60px;
+    text-align: left;
+}
+
+.banner-conteudo {
+    max-width: 50%;
+}
+
+.banner p {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.btnBanner {
+    display: flex;
+    gap: 15px;
+}
+
+.banner-imagem {
+    max-width: 40%;
+    height: auto;
+}
+
+.btn-doar img, .btn-adquirir img {
+    width: 20px;
+    height: 20px;
+}
